@@ -1,0 +1,976 @@
+@import url("https://fonts.gooTAPgleapis.com/css?family=Nunito:300,400,700&display=swap");
+.flexToCenterFullScreenColumn {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 0;
+  margin: 0;
+}
+
+.lightMainFont {
+  /* font-family: "Nunito"; */
+  font-weight: 300;
+}
+
+.mainFont {
+  /* font-family: "Nunito"; */
+  font-weight: 400;
+}
+
+.heavyMainFont {
+  /* font-family: "Nunito"; */
+  font-weight: 700;
+}
+.skillMainFont {
+  /* font-family: "Nunito"; */
+  font-size:25px;
+  font-weight: 700;
+}
+.darkText {
+  color: #0a280a;
+}
+
+.fadeInDown1sDelay {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  /* font-family: "Nunito"; */
+  font-weight: 700;
+  color: #fafff5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 0px) {
+  .contactFontSize {
+    font-size: 1.26rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .contactFontSize {
+    font-size: 1.8rem;
+  }
+}
+
+.iconSize {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.btnIconSize {
+  width: 1.0rem;
+  height: 1.0rem;
+}
+
+.container-fluid {
+  border-radius: 0px 0px 0px 0px;
+}
+
+@media screen and (min-width: 0px) {
+  .linkHoverAnim {
+    padding: 4px;
+    margin: 4px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  .callToActionEmailIcon {
+    padding: 6px;
+    background-color: white;
+    color: black;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .linkHoverAnim {
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.75);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  .linkHoverAnim:hover {
+    background-color: black;
+    font-size: 125%;
+    padding: 4px;
+  }
+  .callToActionEmailIcon {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .callToActionEmailIcon:hover {
+    background-color: white;
+    font-size: 125%;
+    padding: 4px;
+  }
+}
+
+.my-hero {
+  /* background-image: -webkit-gradient(linear, left top, right top, from(#00ff96), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../img/coverMobile.png");
+  background-image: linear-gradient(to right, #00ff96, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/coverMobile.png"); */
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#404040), color-stop(#808080), to(black));
+  background-image: linear-gradient(to right, black, #404040, #808080, black);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media screen and (min-width: 767px) {
+  .my-hero {
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#00ff96), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../img/cover.png");
+    background-image: linear-gradient(to right, #00ff96, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/cover.png"); */
+    background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#404040), color-stop(#808080), to(black));
+  background-image: linear-gradient(to right, black, #404040, #808080, black);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .my-hero-inside {
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 5rem;
+    background-blend-mode: darken;
+  }
+  .my-hero-inside .mainHeading {
+    display: none;
+  }
+  .my-hero-inside .mainHeadingMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* font-family: "Nunito"; */
+    font-weight: 700;
+    font-size: 2.32rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .subtitleHeading {
+    /* font-family: "Nunito"; */
+    font-size: 0.86rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .headingDivider {
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .my-hero-inside {
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: left;
+    padding-bottom: 0rem;
+    background-blend-mode: darken;
+  }
+  .my-hero-inside .mainHeadingMobile {
+    display: none;
+  }
+  .my-hero-inside .mainHeading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* font-family: "Nunito"; */
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .subtitleHeading {
+    /* font-family: "Nunito"; */
+    font-size: 1.4rem;
+    margin: 0;
+    color: #fafff5;
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .my-hero-inside .headingDivider {
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+  }
+}
+
+.removeIfMob {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .removeIfMob {
+    display: none;
+  }
+}
+
+ul.timeline {
+  /* font-family: "Nunito"; */
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #000000;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 5px;
+}
+
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.projectPanel {
+  color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#404040), color-stop(#808080), to(black));
+  background-image: linear-gradient(to right, black, #404040, #808080, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+}
+
+.projectPanel .projectPanelHeader {
+  /* font-family: "Nunito"; */
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.projectPanel .projectName {
+  /* font-family: "Nunito"; */
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.projectPanel .projectPanelBox {
+  background-color: #032b2f;
+}
+
+.projectPanel .projectDetails {
+  /* font-family: "Nunito"; */
+  font-weight: 400;
+}
+
+@media screen and (min-width: 0px) {
+  .gamePanel {
+    color: #fafff5;
+    background-image: url("../img/rgbg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  .gamePanel .gameName {
+    /* font-family: "Nunito"; */
+    font-weight: 400;
+    font-size: 1.66rem;
+  }
+  .gamePanel .gameDetails {
+    /* font-family: "Nunito"; */
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .gamePanel {
+    color: #fafff5;
+    background-color: #509650;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  .gamePanel .gameName {
+    /* font-family: "Nunito"; */
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+  .gamePanel .gameDetails {
+    /* font-family: "Nunito"; */
+    font-weight: 400;
+  }
+}
+
+.timelineSubheading {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.timelineSubheading:hover {
+  color: lightgreen;
+}
+
+.mainBtn {
+  color: #fafff5;
+  background-color: #0a280a;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (min-width: 0px) {
+  .youtubeCover {
+    background-image: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left bottom, left top, from(#003c00), color-stop(50%, #003c00), color-stop(50.01%, #3c0000));
+    background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0), black), linear-gradient(to top, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to top, #003c00, #003c00 50%, #3c0000 50.01%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .youtubeCover .youtubeHeading {
+    display: none;
+  }
+  .youtubeCover .gamePanelBox {
+    color: #fafff5;
+    margin: 0;
+    padding: 0;
+  }
+  .youtubeCover .youtubeFrameSize {
+    width: 256px;
+    height: 144px;
+  }
+  .youtubeCover .urduyt {
+    padding-bottom: 0.5rem;
+  }
+  .youtubeCover .engyt {
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .youtubeCover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0)), color-stop(black), color-stop(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, right top, left top, from(#003c00), color-stop(50%, #003c00), color-stop(50.01%, #3c0000));
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0), black), linear-gradient(to left, black, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0), black), linear-gradient(to left, #003c00, #003c00 50%, #3c0000 50.01%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .youtubeCover .youtubeHeading {
+    display: block;
+    /* font-family: "Nunito"; */
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .youtubeCover .gamePanelBox {
+    color: #fafff5;
+    margin: 0;
+    padding: 0;
+  }
+  .youtubeCover .youtubeFrameSize {
+    width: 480px;
+    height: 270px;
+  }
+  .youtubeCover .urduyt {
+    padding-bottom: 0rem;
+  }
+  .youtubeCover .engyt {
+    padding-top: 0rem;
+  }
+}
+
+.hoverTacticsCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#ff6600), color-stop(#4400ff), to(black));
+  background-image: linear-gradient(to right, black, #ff6600, #4400ff, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hoverTacticsCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.hoverTacticsCover .mainBtn {
+  color: #fafff5;
+  background-color: #3500c8;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.hoverTacticsCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.withoutMilesCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#07744d), color-stop(#00aa66), to(black));
+  background-image: linear-gradient(to right, black, #07744d, #00aa66, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.withoutMilesCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.withoutMilesCover .mainBtn {
+  color: #fafff5;
+  background-color: #00aa66;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.withoutMilesCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.colerrCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#404040), color-stop(#808080), to(black));
+  background-image: linear-gradient(to right, black, #404040, #808080, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.colerrCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(40, 40, 40, 0.95);
+}
+
+.colerrCover .mainBtn {
+  color: #fafff5;
+  background-color: #141414;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.colerrCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.mysticchambersCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#990088), color-stop(#880044), to(black));
+  background-image: linear-gradient(to right, black, #990088, #880044, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mysticchambersCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(31, 0, 21, 0.7);
+}
+
+.mysticchambersCover .mainBtn {
+  color: #fafff5;
+  background-color: #9600c8;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.mysticchambersCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.antonsCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#004488), color-stop(#440888), to(black));
+  background-image: linear-gradient(to right, black, #004488, #440888, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.antonsCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(2, 5, 12, 0.7);
+}
+
+.antonsCover .mainBtn {
+  color: #fafff5;
+  background-color: #003278;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.antonsCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.nickoftimeCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#884400), color-stop(#660066), to(black));
+  background-image: linear-gradient(to right, black, #884400, #660066, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nickoftimeCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(20, 5, 10, 0.7);
+}
+
+.nickoftimeCover .mainBtn {
+  color: #fafff5;
+  background-color: #8c0032;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.nickoftimeCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.leverageCover {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(#448888), color-stop(#116644), to(black));
+  background-image: linear-gradient(to right, black, #448888, #116644, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.leverageCover .gamePanelBox {
+  color: #fafff5;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(5, 25, 20, 0.7);
+}
+
+.leverageCover .mainBtn {
+  color: #fafff5;
+  background-color: #007882;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.leverageCover .mainBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.bacStudiosCover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e0000), color-stop(#001e00), to(black));
+  background-image: linear-gradient(to bottom, #1e0000, #001e00, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bacStudiosCover .gamePanelBox {
+  color: lime;
+}
+
+.bacStudiosCover .mainBtn {
+  color: #fafff5;
+  background-color: #002800;
+  border-color: rgba(250, 255, 245, 0.5);
+}
+
+.bacStudiosCover .mainBtn:hover {
+  color: white;
+  background-color: #005014;
+}
+
+.htgdDetails {
+  /* font-family: "Nunito"; */
+  font-weight: 400;
+}
+
+.htgdHeader {
+  /* font-family: "Nunito"; */
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.mob-noHorizontalGaps {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mob-noVerticalGaps {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .mob-noHorizontalGaps {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mob-noVerticalGaps {
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.nethercardKingdomCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/315x250%23cm/eg2s7z.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzI4Njc0NzUuZ2lm/original/y61%2FLZ.gif")));
+    }
+    */
+}
+
+.ghostRustlersCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/315x250%23cm/9jk2g4.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzI2NTA1NjYuZ2lm/original/l9jsIz.gif")));
+    }
+    */
+}
+
+.exitTheShadowCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/315x250%23cm/xbQjje.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIyMTUxNzUuZ2lm/original/PccvAh.gif")));
+    }
+    */
+}
+
+.alienOverrunCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/315x250%23cm/l5Mn2S.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIxNjMzOTMuZ2lm/original/xIo8Ga.gif")));
+    }
+    */
+}
+
+.delvCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/315x250%23cm/TE7NLp.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIwNTQ5NzUuZ2lm/original/m%2FTIZA.gif")));
+    }
+    */
+}
+
+.wildDriversCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/315x250%23cm/5re7Di.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzIwMzUzMDMuZ2lm/original/OjKhZV.gif")));
+    }
+    */
+}
+
+.whisperdriftCover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/315x250%23cm/RualvC.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+    &:hover {
+        color: $buttonBorderColor;
+        @include backgroundCoverImage((linear-gradient(to top,
+        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25)),
+        url("https://img.itch.zone/aW1nLzE5MjQyNjUuZ2lm/original/H%2FUfjI.gif")));
+    }
+    */
+}
+
+.endSectionCover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), color-stop(#bbbbbb), to(#dddddd));
+  background-image: linear-gradient(to bottom, #dddddd, #bbbbbb, #dddddd);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .mobGroup {
+    position: relative;
+    height: 22rem;
+  }
+  .mobGroup .mobGroupPic1 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: -70px;
+    left: -20px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  .mobGroup .mobGroupPic1:hover {
+    z-index: 9999;
+  }
+  .mobGroup .mobGroupPic2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: 40px;
+  }
+  .mobGroup .mobGroupPic2:hover {
+    z-index: 9999;
+  }
+  .mobGroup .mobGroupPic3 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    left: 100px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .mobGroup .mobGroupPic3:hover {
+    z-index: 9999;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .mobGroup {
+    position: relative;
+    height: 20rem;
+  }
+  .mobGroup .mobGroupPic1 {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    top: -70px;
+    left: -20px;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  .mobGroup .mobGroupPic1:hover {
+    z-index: 9999;
+  }
+  .mobGroup .mobGroupPic2 {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: 40px;
+  }
+  .mobGroup .mobGroupPic2:hover {
+    z-index: 9999;
+  }
+  .mobGroup .mobGroupPic3 {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    left: 100px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  .mobGroup .mobGroupPic3:hover {
+    z-index: 9999;
+  }
+
+  
+  .ulno-space {
+    margin-top: 0;
+    padding-left:4em;
+  }
+
+}
+/*# sourceMappingURL=style.css.map */
